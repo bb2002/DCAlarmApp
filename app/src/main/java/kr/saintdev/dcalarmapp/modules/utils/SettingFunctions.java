@@ -9,23 +9,23 @@ public class SettingFunctions {
     static final String WORK_ON_DATA_MODE_NAME = "dcalarm.settings.usedata";
 
 
-    static int getParseingServiceDelay(Context context) {
+    public static int getParseingServiceDelay(Context context) {
         SharedPreferences sharedPrep = context.getSharedPreferences(SHARED_PREP_NAME, Context.MODE_PRIVATE);
         return sharedPrep.getInt(PARSEING_SERVICE_DELAY_NAME, 10);
     }
 
-    static void setParseingServiceDelay(Context context, int a) {
+    public static void setParseingServiceDelay(Context context, int a) {
         SharedPreferences.Editor sharedPrep = context.getSharedPreferences(SHARED_PREP_NAME, Context.MODE_PRIVATE).edit();
         sharedPrep.putInt(PARSEING_SERVICE_DELAY_NAME, a);
         sharedPrep.apply();
     }
 
-    static boolean isWorkOnDataMode(Context context) {
+    public static boolean isWorkOnDataMode(Context context) {
         SharedPreferences sharedPrep = context.getSharedPreferences(SHARED_PREP_NAME, Context.MODE_PRIVATE);
         return sharedPrep.getBoolean(WORK_ON_DATA_MODE_NAME, false);
     }
 
-    static void setWorkOnDataMode(Context context, boolean bool) {
+    public static void setWorkOnDataMode(Context context, boolean bool) {
         SharedPreferences.Editor sharedPrep = context.getSharedPreferences(SHARED_PREP_NAME, Context.MODE_PRIVATE).edit();
         sharedPrep.putBoolean(WORK_ON_DATA_MODE_NAME, bool);
         sharedPrep.apply();

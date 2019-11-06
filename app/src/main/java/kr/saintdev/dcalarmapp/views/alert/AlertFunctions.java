@@ -40,7 +40,7 @@ public class AlertFunctions {
         return openProgress(context, msgS);
     }
 
-    interface OnAlertConfirmClickListener {
+    public interface OnAlertConfirmClickListener {
         void onPositive();
         void onNegative();
     }

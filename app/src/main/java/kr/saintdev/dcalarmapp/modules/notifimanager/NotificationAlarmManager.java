@@ -75,7 +75,7 @@ public class NotificationAlarmManager {
      * @Date 10.18 2019
      * Clear all notification alarms.
      */
-    void removeAllNotificationAlarm() {
+    public void removeAllNotificationAlarm() {
         databaseManager.makeReadQuery(DatabaseConst.DELETE_DC_NOTIFIED_ALARMS, this.context).execute();
     }
 }
