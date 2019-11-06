@@ -6,6 +6,10 @@ import android.os.Bundle;
 
 import kr.saintdev.dcalarmapp.R;
 
+/**
+ * 서한 파트
+ */
+
 public class GalleryListActivity extends AppCompatActivity {
 
     @Override

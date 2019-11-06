@@ -51,7 +51,6 @@ public class DatabaseManager {
 
         @Override
         public void onCreate(SQLiteDatabase p0) {
-            p0.execSQL(DatabaseConst.CREATE_TABLE_METASET);
             p0.execSQL(DatabaseConst.CREATE_TABLE_TARGETING_GALL);
             p0.execSQL(DatabaseConst.CREATE_TABLE_KEYWORD);
         }
