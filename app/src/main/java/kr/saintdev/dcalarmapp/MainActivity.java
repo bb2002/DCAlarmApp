@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Start service.
-        startService(new Intent(this, DCAlarmService.class));
+//        startService(new Intent(this, DCAlarmService.class));
     }
 
     @Override
